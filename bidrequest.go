@@ -31,6 +31,7 @@ type BidRequest struct {
 	BAdv        []string        `json:"badv,omitempty"`    // Array of strings of blocked toplevel domains of advertisers
 	Regs        *Regulations    `json:"regs,omitempty"`
 	Ext         json.RawMessage `json:"ext,omitempty"`
+	Test        int             `json:"test,omitempty"`
 
 	Pmp *Pmp `json:"pmp,omitempty"` // DEPRECATED: kept for backwards compatibility
 }
